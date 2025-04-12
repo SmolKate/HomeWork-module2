@@ -1,0 +1,38 @@
+$body-color: red;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: $body-color;
+}
+
+#container {
+    height: 100vh;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: orange;
+}
+
+#list {
+    display: flex;
+    flex-direction: row;
+
+    li {
+        width: 150px;
+        height: 150px;
+        border: 2px solid black;
+        border-radius: 20px;
+        margin: 20px;
+        list-style: none;
+        text-align: center;
+    }
+}

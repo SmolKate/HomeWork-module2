@@ -1,1 +1,1 @@
-export default ['Summer', 'Spring', 'Winter', 'Autumn']
+export default ['Summer', 'Rainy', 'Winter']

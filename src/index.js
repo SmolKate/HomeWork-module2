@@ -1,6 +1,7 @@
 import data from './data'
+import './index.scss'
 
-const root = document.querySelector('#app')
+const root = document.querySelector('#list')
 
 function renderItem(item, number) {
     const li = document.createElement('li')
