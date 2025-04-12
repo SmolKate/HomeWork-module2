@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url('./fonts/Roboto-Bold.ttf') format('truetype');
+}
+
 $body-color: red;
 
 * {
@@ -8,6 +13,7 @@ $body-color: red;
 
 body {
     color: $body-color;
+    font-family: 'Roboto-bold', serif;
 }
 
 #container {
