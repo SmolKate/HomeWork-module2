@@ -9,7 +9,9 @@ let playedSound = ''
 
 function onClick(background, audio, name) {
     document.getElementById('container').style.backgroundImage = `url("${background}")`
+    const volume = document.getElementById('volume').value
     const sound = document.getElementById('audio')
+    sound.volume = volume
 
     if (playedSound === name) {
         isPlayed ? sound.pause() : sound.play()
@@ -40,3 +42,10 @@ function renderItem({background, icon, audio, name}) {
 }
 
 data.forEach((item, number) => renderItem(item, number))
+
+document.getElementById('volume').addEventListener('input', onRangeChange)
+
+function onRangeChange(e) {
+    const sound = document.getElementById('audio')
+    sound.volume = e.target.value
+}
