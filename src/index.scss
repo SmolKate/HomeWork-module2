@@ -40,5 +40,8 @@ h1 {
         margin: 20px;
         list-style: none;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
