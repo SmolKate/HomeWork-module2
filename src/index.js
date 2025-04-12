@@ -1,3 +1,5 @@
+import data from './data'
+
 const root = document.querySelector('#app')
 
 function renderItem(item, number) {

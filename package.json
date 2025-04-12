@@ -1,0 +1,18 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "rs module 2",
+  "private": true,
+  "scripts": {
+    "start": "npx webpack --mode development",
+    "build": "npx webpack --mode production"
+  },
+  "author": "SmolKate",
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "^13.0.0",
+    "html-webpack-plugin": "^5.6.3",
+    "webpack": "^5.99.5",
+    "webpack-cli": "^6.0.1"
+  }
+}
