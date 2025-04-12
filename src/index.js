@@ -2,8 +2,13 @@ import data from './data'
 import './index.scss'
 
 const root = document.querySelector('#list')
+document.getElementById('container').style.backgroundImage = `url("${data[0].background}")`
 
-function renderItem({name, background, icon}, number) {
+function onClick(background) {
+    document.getElementById('container').style.backgroundImage = `url("${background}")`
+}
+
+function renderItem({background, icon}) {
     const myIcon = new Image()
     myIcon.src = icon;
 
@@ -13,6 +18,8 @@ function renderItem({name, background, icon}, number) {
     const li = document.createElement('li')
     li.style.backgroundImage = `url("${background}")`
     li.appendChild(element)
+
+    li.addEventListener('click', () => onClick(background))
 
     root.append(li)
 }

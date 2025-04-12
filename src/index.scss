@@ -18,7 +18,15 @@ body {
 
 #container {
     height: 100vh;
-    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container-filter {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
     display: flex;
     flex-direction: column;
     align-items: center;
