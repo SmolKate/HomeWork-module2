@@ -1,0 +1,1 @@
+const data = ['Summer', 'Spring', 'Winter', 'Autumn']
