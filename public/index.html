@@ -4,18 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>My Website</title>
+    <title>Weather sounds</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" href="./favicon.png" type="image/x-icon" />
-    <script src="./data.js" defer></script>
-    <script src="./index.js" defer></script>
   </head>
   <body>
     <main>
-      <div>
-        <h1>Welcome to My Website</h1>
-        <ul id="app"></ul>
+      <div id="container">
+        <div id="container-filter">
+          <h1>Weather sounds</h1>
+          <ul id="list"></ul>
+          <input
+            type="range"
+            id="volume"
+            name="volume"
+            min="0"
+            max="1"
+            step="0.1"
+          />
+        </div>
       </div>
+      <audio id="audio" loop="loop"></audio>
     </main>
   </body>
 </html>
