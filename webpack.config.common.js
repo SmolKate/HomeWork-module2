@@ -6,11 +6,14 @@ const path = require('path')
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
-    entry: './index.js',
+    entry: './index.ts',
     output: {
         filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'dist'),
         clean: true
+    },
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js', '.jsx'],
     },
     module: {
         rules: [
@@ -45,6 +48,11 @@ module.exports = {
                     name: '[name].[ext]',
                     outputPath: 'assets'
                 },
+            },
+            {
+                test: /\.[tj]sx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
             },
         ],
     },

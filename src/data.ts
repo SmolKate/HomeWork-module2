@@ -7,6 +7,7 @@ import WinterIcon from './assets/icons/cloud-snow.svg'
 import SummerAudio from './assets/sounds/summer.mp3'
 import RainyAudio from './assets/sounds/rain.mp3'
 import WinterAudio from './assets/sounds/winter.mp3'
+import { IDataItem } from './types';
 
 export default [
     {
@@ -27,4 +28,4 @@ export default [
         icon: WinterIcon,
         audio: WinterAudio,
     }
-]
+] as IDataItem[]
