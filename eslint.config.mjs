@@ -9,7 +9,11 @@ export default defineConfig([
   globalIgnores(["dist/*", "package-lock.json", "webpack.config.*"]),
   { files: ["**/*.{js,mjs,cjs}"], plugins: { js }, extends: ["js/recommended"] },
   { files: ["**/*.{js,mjs,cjs}"], languageOptions: { globals: globals.browser } },
-  { files: ["**/*.json"], plugins: { json }, language: "json/json", extends: ["json/recommended"] },
+  { files: ["**/*.json"], plugins: { json }, language: "json/json", extends: ["json/recommended"],
+    "rules": {
+      "json/*": ["error", {"allowComments": true}]
+    }
+  },
   { files: ["**/*.css"], plugins: { css }, language: "css/css", extends: ["css/recommended"] },
   {
 		rules: {

@@ -10,5 +10,4 @@ module.exports = merge(commonConfig, {
         minimize: true,
         minimizer: [new TerserPlugin(), new CssMinimizerPlugin()],
     },
-
 })
